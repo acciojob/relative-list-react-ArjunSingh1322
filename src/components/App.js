@@ -1,9 +1,15 @@
 import React from 'react'
 
 const App = () => {
+
+  let arr = ["Arjun","yashvini","Ashish"]
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+<ul id = "order">
+ {arr.map((value,index)=>{
+  return <li>{value}</li>
+})}
+</ul>
     </div>
   )
 }
