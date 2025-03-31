@@ -2,14 +2,14 @@ import React from 'react'
 
 const App = () => {
 
-  let arr = ["Arjun","yashvini","Ashish"]
+  let relatives  = ["Arjun","yashvini","Ashish"]
   return (
     <div id="main">
-<ul id = "order">
- {arr.map((value,index)=>{
-  return <li>{value}</li>
+<ol key = "relativeList">
+ {relatives .map((value,index)=>{
+  return <li key = {`relativeListItem${index+1}`} >{value}</li>
 })}
-</ul>
+</ol>
     </div>
   )
 }
